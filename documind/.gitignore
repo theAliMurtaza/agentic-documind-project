@@ -1,0 +1,29 @@
+# --- Secrets (never commit these) ---
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# --- Python environment and caches ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# --- Generated data ---
+chroma_db/
+evals/results.json
+
+# --- Your documents (personal files stay local) ---
+data/*
+!data/.gitkeep
+
+# --- Editors and OS files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
